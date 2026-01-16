@@ -1,0 +1,2 @@
+python build_yolov8.py --EXP_NAME analysis_3w3a_yolov8p_640 --MODEL_ONNX build/test_3w3a_yolov8p_640/intermediate_models/step_specialize_layers.onnx --TARGET_FPS 30 --ANALYZE_MAC_EFFICIENCY --BUILD_TYPE set_folding
+# python build_yolov8.py --EXP_NAME estimates_3w3a_yolov8p_640_30fps --MODEL_ONNX build/test_3w3a_yolov8p_640/intermediate_models/step_specialize_layers.onnx --FOLDING_CONFIG folding_configs/9830400.json --BUILD_TYPE set_folding

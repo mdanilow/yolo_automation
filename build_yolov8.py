@@ -159,6 +159,19 @@ def platform_to_shell(platform):
         return build_cfg.ShellFlowType.VITIS_ALVEO
     else:
         raise Exception("Unknown platform, can't determine ShellFlowType")
+    
+
+def mhz_to_clk_ns(clk_mhz):
+    clk_hz = clk_mhz * 10**6
+    clk_s = 1 / clk_hz
+    clk_ns = clk_s * 10**9
+    return clk_ns
+
+
+def cycles_to_fps(cycles, synth_clk_period_ns):
+    n_clock_cycles_per_sec = 10**9 / synth_clk_period_ns
+    fps = n_clock_cycles_per_sec / cycles
+    return fps
 
 
 build_steps_full = [
@@ -195,34 +208,59 @@ build_steps_estimates = [
     "step_generate_estimate_reports",
 ]
 
+build_steps_set_folding = [
+    "step_target_fps_parallelization",
+    "step_apply_folding_config",
+    "step_minimize_bit_width",
+    "step_generate_estimate_reports",
+]
 
-EXP_NAME = "test_8w8a_yolov8n_320"
-BOARD = "U55C"
-model_file = "models/test_8w8a_yolov8n_320.onnx"
-folding_config_file = None
+build_type_to_steps = {
+    "analysis": build_steps_estimates,
+    "set_folding": build_steps_set_folding,
+    "full": build_steps_full,
+}
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--EXP_NAME', type=str, default='test')
+parser.add_argument('--BOARD', type=str, default='ZCU104')
+parser.add_argument('--MODEL_ONNX', type=str)
+parser.add_argument('--FOLDING_CONFIG', type=str, default=None)
+parser.add_argument('--TARGET_FPS', type=float, default=None)
+# parser.add_argument('--TARGET_CYCLES', type=int, default=None)
+parser.add_argument('--CLK_MHZ', type=float, default=300)
+parser.add_argument('--BUILD_TYPE', type=str, default="analysis")
+parser.add_argument('--ANALYZE_MAC_EFFICIENCY', action="store_true")
+args = parser.parse_args()
+
+# if args.TARGET_CYCLES is not None:
+#     args.TARGET_FPS = cycles_to_fps(args.TARGET_CYCLES, mhz_to_clk_ns(args.CLK_MHZ))
+#     print("TARGET_CYCLES set to {}, which gives {} fps".format(args.TARGET_CYCLES, args.TARGET_FPS))
 specialize_layers_config_file = None
-build_steps = build_steps_full
-target_fps = 90
 auto_fifo_depths = False
 
 # which platforms to build the networks for
 zynq_platforms = ["ZCU104", "ZCU102"]
 alveo_platforms = ["U250", "U55C"]
 BUILD_DIR = os.environ["FINN_BUILD_DIR"]
-OUTPUT_DIR = join(BUILD_DIR, EXP_NAME)
+OUTPUT_DIR = join(BUILD_DIR, args.EXP_NAME)
+build_steps = build_type_to_steps[args.BUILD_TYPE]
+
 
 cfg = build.DataflowBuildConfig(
     output_dir=OUTPUT_DIR,
     verbose=True,
     standalone_thresholds=True,
-    folding_config_file=folding_config_file,
+    folding_config_file=args.FOLDING_CONFIG,
     specialize_layers_config_file=specialize_layers_config_file,
     auto_fifo_depths=auto_fifo_depths,
     split_large_fifos=True,
-    synth_clk_period_ns=10,
-    target_fps=target_fps,
-    board=BOARD,
-    shell_flow_type=platform_to_shell(BOARD),
+    synth_clk_period_ns=mhz_to_clk_ns(args.CLK_MHZ),
+    target_fps=args.TARGET_FPS,
+    analyze_mac_efficiency=args.ANALYZE_MAC_EFFICIENCY,
+    board=args.BOARD,
+    shell_flow_type=platform_to_shell(args.BOARD),
     steps=build_steps,
     generate_outputs=[
         build_cfg.DataflowOutputType.ESTIMATE_REPORTS,
@@ -231,4 +269,4 @@ cfg = build.DataflowBuildConfig(
         build_cfg.DataflowOutputType.DEPLOYMENT_PACKAGE,
     ],
 )
-build.build_dataflow_cfg(model_file, cfg)
+build.build_dataflow_cfg(args.MODEL_ONNX, cfg)
