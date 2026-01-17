@@ -8,8 +8,8 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_rtl_0": {
-    "PE": 1,
+  "MVAU_hls_0": {
+    "PE": 2,
     "SIMD": 3,
     "ram_style": "auto",
     "resType": "auto",
@@ -30,9 +30,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_0": {
-    "PE": 1,
-    "SIMD": 6,
+  "MVAU_hls_1": {
+    "PE": 4,
+    "SIMD": 8,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -44,9 +44,9 @@
     "depth_trigger_uram": 0,
     "depth_trigger_bram": 0
   },
-  "MVAU_hls_1": {
+  "MVAU_hls_2": {
     "PE": 1,
-    "SIMD": 1,
+    "SIMD": 8,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -72,9 +72,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_2": {
+  "MVAU_hls_3": {
     "PE": 1,
-    "SIMD": 3,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -94,9 +94,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_3": {
+  "MVAU_hls_4": {
     "PE": 1,
-    "SIMD": 3,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -114,9 +114,9 @@
   "StreamingConcat_hls_0": {
     "SIMD": 1
   },
-  "MVAU_hls_4": {
+  "MVAU_hls_5": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 12,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -136,9 +136,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_5": {
-    "PE": 1,
-    "SIMD": 4,
+  "MVAU_hls_6": {
+    "PE": 4,
+    "SIMD": 8,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -150,9 +150,9 @@
     "depth_trigger_uram": 0,
     "depth_trigger_bram": 0
   },
-  "MVAU_hls_6": {
+  "MVAU_hls_7": {
     "PE": 1,
-    "SIMD": 1,
+    "SIMD": 8,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -178,9 +178,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_7": {
+  "MVAU_hls_8": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -200,9 +200,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_8": {
+  "MVAU_hls_9": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -228,9 +228,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_9": {
+  "MVAU_hls_10": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -250,9 +250,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_10": {
+  "MVAU_hls_11": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -270,9 +270,9 @@
   "StreamingConcat_hls_1": {
     "SIMD": 1
   },
-  "MVAU_hls_11": {
+  "MVAU_hls_12": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -295,9 +295,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_12": {
-    "PE": 1,
-    "SIMD": 3,
+  "MVAU_hls_13": {
+    "PE": 4,
+    "SIMD": 8,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -309,9 +309,9 @@
     "depth_trigger_uram": 0,
     "depth_trigger_bram": 0
   },
-  "MVAU_hls_13": {
+  "MVAU_hls_14": {
     "PE": 1,
-    "SIMD": 1,
+    "SIMD": 8,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -337,9 +337,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_14": {
+  "MVAU_hls_15": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -359,9 +359,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_15": {
+  "MVAU_hls_16": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -387,9 +387,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_16": {
+  "MVAU_hls_17": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -409,9 +409,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_17": {
+  "MVAU_hls_18": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -429,9 +429,9 @@
   "StreamingConcat_hls_2": {
     "SIMD": 1
   },
-  "MVAU_hls_18": {
+  "MVAU_hls_19": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -454,9 +454,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_19": {
-    "PE": 1,
-    "SIMD": 3,
+  "MVAU_hls_20": {
+    "PE": 4,
+    "SIMD": 8,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -468,9 +468,9 @@
     "depth_trigger_uram": 0,
     "depth_trigger_bram": 0
   },
-  "MVAU_hls_20": {
+  "MVAU_hls_21": {
     "PE": 1,
-    "SIMD": 1,
+    "SIMD": 8,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -496,9 +496,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_21": {
+  "MVAU_hls_22": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -518,9 +518,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_22": {
+  "MVAU_hls_23": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -538,9 +538,9 @@
   "StreamingConcat_hls_3": {
     "SIMD": 1
   },
-  "MVAU_hls_23": {
+  "MVAU_hls_24": {
     "PE": 1,
-    "SIMD": 1,
+    "SIMD": 12,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -552,9 +552,9 @@
     "depth_trigger_uram": 0,
     "depth_trigger_bram": 0
   },
-  "MVAU_hls_24": {
+  "MVAU_hls_25": {
     "PE": 1,
-    "SIMD": 1,
+    "SIMD": 4,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -611,9 +611,9 @@
   "StreamingConcat_hls_4": {
     "SIMD": 1
   },
-  "MVAU_hls_25": {
+  "MVAU_hls_26": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -634,9 +634,9 @@
   "StreamingConcat_hls_5": {
     "SIMD": 1
   },
-  "MVAU_hls_26": {
-    "PE": 1,
-    "SIMD": 2,
+  "MVAU_hls_27": {
+    "PE": 2,
+    "SIMD": 12,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -662,9 +662,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_27": {
+  "MVAU_hls_28": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -684,9 +684,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_28": {
+  "MVAU_hls_29": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -701,9 +701,9 @@
   "StreamingConcat_hls_6": {
     "SIMD": 1
   },
-  "MVAU_hls_29": {
+  "MVAU_hls_30": {
     "PE": 1,
-    "SIMD": 1,
+    "SIMD": 12,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -724,9 +724,9 @@
   "StreamingConcat_hls_7": {
     "SIMD": 1
   },
-  "MVAU_hls_30": {
-    "PE": 1,
-    "SIMD": 2,
+  "MVAU_hls_31": {
+    "PE": 2,
+    "SIMD": 12,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -752,9 +752,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_31": {
+  "MVAU_hls_32": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -774,9 +774,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_32": {
+  "MVAU_hls_33": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -791,9 +791,9 @@
   "StreamingConcat_hls_8": {
     "SIMD": 1
   },
-  "MVAU_hls_33": {
+  "MVAU_hls_34": {
     "PE": 1,
-    "SIMD": 1,
+    "SIMD": 12,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -832,25 +832,25 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_34": {
-    "PE": 4,
-    "SIMD": 3,
-    "ram_style": "auto",
-    "resType": "auto",
-    "mem_mode": "internal_decoupled",
-    "runtime_writeable_weights": 0
-  },
   "MVAU_hls_35": {
-    "PE": 1,
-    "SIMD": 2,
+    "PE": 8,
+    "SIMD": 4,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
     "runtime_writeable_weights": 0
   },
   "MVAU_hls_36": {
-    "PE": 4,
-    "SIMD": 3,
+    "PE": 1,
+    "SIMD": 16,
+    "ram_style": "auto",
+    "resType": "auto",
+    "mem_mode": "internal_decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "MVAU_hls_37": {
+    "PE": 16,
+    "SIMD": 4,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -893,23 +893,23 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_37": {
+  "MVAU_hls_38": {
     "PE": 1,
-    "SIMD": 1,
+    "SIMD": 12,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
     "runtime_writeable_weights": 0
   },
-  "MVAU_rtl_1": {
-    "PE": 8,
-    "SIMD": 3,
+  "MVAU_hls_39": {
+    "PE": 16,
+    "SIMD": 4,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
     "runtime_writeable_weights": 0
   },
-  "MVAU_rtl_2": {
+  "MVAU_hls_40": {
     "PE": 4,
     "SIMD": 4,
     "ram_style": "auto",
@@ -941,7 +941,7 @@
   "DuplicateStreams_hls_16": {
     "PE": 1
   },
-  "MVAU_rtl_3": {
+  "MVAU_hls_41": {
     "PE": 1,
     "SIMD": 4,
     "ram_style": "auto",
@@ -949,7 +949,7 @@
     "mem_mode": "internal_decoupled",
     "runtime_writeable_weights": 0
   },
-  "MVAU_rtl_4": {
+  "MVAU_hls_42": {
     "PE": 1,
     "SIMD": 2,
     "ram_style": "auto",
@@ -968,9 +968,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_38": {
+  "MVAU_hls_43": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -990,9 +990,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_39": {
+  "MVAU_hls_44": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -1007,9 +1007,9 @@
   "StreamingConcat_hls_11": {
     "SIMD": 1
   },
-  "MVAU_hls_40": {
+  "MVAU_hls_45": {
     "PE": 1,
-    "SIMD": 1,
+    "SIMD": 12,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -1048,25 +1048,25 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_41": {
-    "PE": 1,
-    "SIMD": 5,
+  "MVAU_hls_46": {
+    "PE": 4,
+    "SIMD": 4,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
     "runtime_writeable_weights": 0
   },
-  "MVAU_hls_42": {
+  "MVAU_hls_47": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
     "runtime_writeable_weights": 0
   },
-  "MVAU_hls_43": {
-    "PE": 2,
-    "SIMD": 3,
+  "MVAU_hls_48": {
+    "PE": 8,
+    "SIMD": 4,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -1109,23 +1109,23 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_44": {
+  "MVAU_hls_49": {
     "PE": 1,
-    "SIMD": 1,
+    "SIMD": 12,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
     "runtime_writeable_weights": 0
   },
-  "MVAU_rtl_5": {
-    "PE": 2,
-    "SIMD": 3,
+  "MVAU_hls_50": {
+    "PE": 4,
+    "SIMD": 4,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
     "runtime_writeable_weights": 0
   },
-  "MVAU_rtl_6": {
+  "MVAU_hls_51": {
     "PE": 1,
     "SIMD": 4,
     "ram_style": "auto",
@@ -1157,7 +1157,7 @@
   "DuplicateStreams_hls_18": {
     "PE": 1
   },
-  "MVAU_rtl_7": {
+  "MVAU_hls_52": {
     "PE": 1,
     "SIMD": 1,
     "ram_style": "auto",
@@ -1165,7 +1165,7 @@
     "mem_mode": "internal_decoupled",
     "runtime_writeable_weights": 0
   },
-  "MVAU_rtl_8": {
+  "MVAU_hls_53": {
     "PE": 1,
     "SIMD": 1,
     "ram_style": "auto",
@@ -1184,9 +1184,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_45": {
+  "MVAU_hls_54": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -1206,9 +1206,9 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_46": {
+  "MVAU_hls_55": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 16,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -1223,9 +1223,9 @@
   "StreamingConcat_hls_14": {
     "SIMD": 1
   },
-  "MVAU_hls_47": {
+  "MVAU_hls_56": {
     "PE": 1,
-    "SIMD": 1,
+    "SIMD": 12,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -1256,17 +1256,17 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_hls_48": {
-    "PE": 1,
-    "SIMD": 3,
+  "MVAU_hls_57": {
+    "PE": 2,
+    "SIMD": 4,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
     "runtime_writeable_weights": 0
   },
-  "MVAU_hls_49": {
-    "PE": 1,
-    "SIMD": 3,
+  "MVAU_hls_58": {
+    "PE": 4,
+    "SIMD": 4,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -1300,7 +1300,7 @@
     "parallel_window": 0,
     "ram_style": "distributed"
   },
-  "MVAU_rtl_9": {
+  "MVAU_hls_59": {
     "PE": 1,
     "SIMD": 1,
     "ram_style": "auto",
@@ -1308,9 +1308,9 @@
     "mem_mode": "internal_decoupled",
     "runtime_writeable_weights": 0
   },
-  "MVAU_rtl_10": {
+  "MVAU_hls_60": {
     "PE": 1,
-    "SIMD": 2,
+    "SIMD": 4,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
@@ -1328,7 +1328,7 @@
     "depth_trigger_uram": 0,
     "depth_trigger_bram": 0
   },
-  "MVAU_rtl_11": {
+  "MVAU_hls_61": {
     "PE": 1,
     "SIMD": 1,
     "ram_style": "auto",
@@ -1336,7 +1336,7 @@
     "mem_mode": "internal_decoupled",
     "runtime_writeable_weights": 0
   },
-  "MVAU_rtl_12": {
+  "MVAU_hls_62": {
     "PE": 1,
     "SIMD": 1,
     "ram_style": "auto",

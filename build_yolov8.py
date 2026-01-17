@@ -3,6 +3,7 @@ from os.path import join
 import argparse
 import shutil
 import torch
+from pathlib import Path
 
 # build steps
 from qonnx.core.datatype import DataType
@@ -227,6 +228,7 @@ parser.add_argument('--EXP_NAME', type=str, default='test')
 parser.add_argument('--BOARD', type=str, default='ZCU104')
 parser.add_argument('--MODEL_ONNX', type=str)
 parser.add_argument('--FOLDING_CONFIG', type=str, default=None)
+parser.add_argument('--SPECIALIZE_LAYERS_CONFIG', type=str, default=None)
 parser.add_argument('--TARGET_FPS', type=float, default=None)
 # parser.add_argument('--TARGET_CYCLES', type=int, default=None)
 parser.add_argument('--CLK_MHZ', type=float, default=300)
@@ -237,13 +239,12 @@ args = parser.parse_args()
 # if args.TARGET_CYCLES is not None:
 #     args.TARGET_FPS = cycles_to_fps(args.TARGET_CYCLES, mhz_to_clk_ns(args.CLK_MHZ))
 #     print("TARGET_CYCLES set to {}, which gives {} fps".format(args.TARGET_CYCLES, args.TARGET_FPS))
-specialize_layers_config_file = None
 auto_fifo_depths = False
 
 # which platforms to build the networks for
 zynq_platforms = ["ZCU104", "ZCU102"]
 alveo_platforms = ["U250", "U55C"]
-BUILD_DIR = os.environ["FINN_BUILD_DIR"]
+BUILD_DIR = Path(os.environ["FINN_BUILD_DIR"]).parent
 OUTPUT_DIR = join(BUILD_DIR, args.EXP_NAME)
 build_steps = build_type_to_steps[args.BUILD_TYPE]
 
@@ -253,7 +254,7 @@ cfg = build.DataflowBuildConfig(
     verbose=True,
     standalone_thresholds=True,
     folding_config_file=args.FOLDING_CONFIG,
-    specialize_layers_config_file=specialize_layers_config_file,
+    specialize_layers_config_file=args.SPECIALIZE_LAYERS_CONFIG,
     auto_fifo_depths=auto_fifo_depths,
     split_large_fifos=True,
     synth_clk_period_ns=mhz_to_clk_ns(args.CLK_MHZ),

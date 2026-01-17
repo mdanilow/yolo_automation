@@ -1,0 +1,192 @@
+{
+  "Defaults": {},
+  "MVAU_0": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_1": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_2": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_3": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_4": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_5": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_6": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_7": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_8": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_9": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_10": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_11": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_12": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_13": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_14": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_15": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_16": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_17": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_18": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_19": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_20": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_21": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_22": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_23": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_24": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_25": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_26": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_27": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_28": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_29": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_30": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_31": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_32": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_33": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_34": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_35": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_36": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_37": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_38": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_39": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_40": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_41": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_42": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_43": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_44": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_45": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_46": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_47": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_48": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_49": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_50": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_51": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_52": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_53": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_54": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_55": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_56": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_57": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_58": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_59": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_60": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_61": {
+    "preferred_impl_style": "hls"
+  },
+  "MVAU_62": {
+    "preferred_impl_style": "hls"
+  }
+}
