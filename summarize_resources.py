@@ -6,11 +6,11 @@ import json
 
 BUILD_DIR = "build"
 
-results = "model,fps,lut,bram18k,dsp\n"
+results = "model,fps,lut,bram18k,dsp,mac_efficiency\n"
 models = os.listdir(BUILD_DIR)
 models.sort()
 for model in models:
-    if model.startswith("build_") or model.startswith("estimates_"):
+    if model.startswith("lutestimates_"):
         try:
             resources_json = join(BUILD_DIR, model, "report", "estimate_layer_resources.json")
             with open(resources_json, "r") as f:
@@ -20,17 +20,19 @@ for model in models:
                 performance = json.load(f)
             resources = resources["total"]
             fps = performance["estimated_throughput_fps"]
-            model_name = model.lstrip("build_").lstrip("estimates_")
+            mac_efficiency = performance["mac_efficiency"]
+            model_name = model.removeprefix("lutestimates_")
             print(model_name)
-            results += "{},{},{},{},{}\n".format(
+            results += "{},{},{},{},{},{}%\n".format(
                 model_name,
                 fps,
                 resources["LUT"],
                 resources["BRAM_18K"],
-                resources["DSP"]
+                resources["DSP"],
+                round(mac_efficiency, 2)
             )
         except FileNotFoundError as e:
             print(e)
 
-with open("summary.csv", "w") as f:
+with open("summary_lut.csv", "w") as f:
     f.write(results)
