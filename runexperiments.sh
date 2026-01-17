@@ -1,6 +1,11 @@
-# python build_yolov8.py --EXP_NAME estimates_3w3a_yolov8p_640_30fps --MODEL_ONNX build/test_3w3a_yolov8p_640/intermediate_models/step_specialize_layers.onnx --FOLDING_CONFIG folding_configs/9830400.json --BUILD_TYPE set_folding
 # python build_yolov8.py --EXP_NAME analysis_3w3a_yolov8p_640_hls --MODEL_ONNX exports/3w3a_yolov8p_640.onnx --SPECIALIZE_LAYERS_CONFIG specialize_layers_configs/mvaus_hls.json --TARGET_FPS 30 --ANALYZE_MAC_EFFICIENCY --BUILD_TYPE analysis
 # python build_yolov8.py --EXP_NAME analysis_3w3a_yolov8s_640_hls --MODEL_ONNX exports/3w3a_yolov8s_640.onnx --SPECIALIZE_LAYERS_CONFIG specialize_layers_configs/mvaus_hls.json --TARGET_FPS 30 --ANALYZE_MAC_EFFICIENCY --BUILD_TYPE analysis
+
+python build_yolov8.py --EXP_NAME analysis_3w3a_yolov8p_640_hls --MODEL_ONNX build/analysis_3w3a_yolov8p_640_hls/intermediate_models/step_specialize_layers.onnx --SPECIALIZE_LAYERS_CONFIG specialize_layers_configs/mvaus_hls.json --TARGET_FPS 30 --ANALYZE_MAC_EFFICIENCY --BUILD_TYPE set_folding
+python build_yolov8.py --EXP_NAME analysis_3w3a_yolov8n_640_hls --MODEL_ONNX build/analysis_3w3a_yolov8n_640_hls/intermediate_models/step_specialize_layers.onnx --SPECIALIZE_LAYERS_CONFIG specialize_layers_configs/mvaus_hls.json --TARGET_FPS 30 --ANALYZE_MAC_EFFICIENCY --BUILD_TYPE set_folding
+python build_yolov8.py --EXP_NAME analysis_3w3a_yolov8s_640_hls --MODEL_ONNX build/analysis_3w3a_yolov8s_640_hls/intermediate_models/step_specialize_layers.onnx --SPECIALIZE_LAYERS_CONFIG specialize_layers_configs/mvaus_hls.json --TARGET_FPS 30 --ANALYZE_MAC_EFFICIENCY --BUILD_TYPE set_folding
+
+
 
 # 3-bit
 # python build_yolov8.py --EXP_NAME build_3w3a_yolov8p_640_30fps_hls --MODEL_ONNX exports/3w3a_yolov8p_640.onnx --FOLDING_CONFIG folding_configs/yolov8p_640_30fps_hls.json --SPECIALIZE_LAYERS_CONFIG specialize_layers_configs/mvaus_hls.json --BUILD_TYPE full

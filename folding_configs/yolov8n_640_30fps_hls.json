@@ -1265,8 +1265,8 @@
     "runtime_writeable_weights": 0
   },
   "MVAU_hls_58": {
-    "PE": 5,
-    "SIMD": 1,
+    "PE": 1,
+    "SIMD": 6,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
